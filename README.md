@@ -1,51 +1,46 @@
-# 🏠📊 House Price Prediction 
+# 🏠📊 House Price Predictor
 
 **This is my internship task at Codomax Digital Solutions Company.**
 
-This project implements a **machine learning-based regression model** to predict **house prices** based on various features such as location, size, number of rooms, and other property-related attributes. The model is trained on housing data and can estimate prices for unseen properties.
+A machine learning-based **house price prediction application** that uses a **Random Forest regression model** to estimate house prices based on property features.
 
 ## 📌 Project Overview
 
-The goal of this project is to build a **regression model** that predicts the **price of a house 🏠** using important features. Machine learning algorithms learn relationships between input features and house prices to make accurate predictions.
-
-## 📂 Dataset
-
-* **Dataset:** House Price Dataset
-* **Data Type:** Structured (CSV)
-* **Features:** Area, Bedrooms, Bathrooms, Location, etc.
-* **Target Variable:** House Price 💰
-
-## ⚙️ Features
+The project covers the complete Machine Learning workflow, including:
 
 * Data preprocessing and cleaning
-* Handling missing values
-* Feature encoding for categorical variables
-* Feature scaling (if applied)
-* Data visualization and analysis
-* Regression modeling
-* Model evaluation using performance metrics
+* Data analysis and visualization
+* Feature selection and preparation
+* Model training and evaluation
+* House price prediction
+* Deployment using Streamlit
 
-## 🧠 Model & Training
+## 🧠 Model
 
-**Models Used:**
+* **Algorithm:** Random Forest Regressor
+* **Task:** Regression
+* **Evaluation:** MAE, MSE, and R² Score
 
-* Linear Regression
-* Decision Tree / Random Forest *(if used)*
+The model was selected based on its performance among the tested regression approaches.
 
-**Train-Test Split:**
+## 📊 Dataset
 
-* 80% Training
-* 20% Testing
+The application uses a realistic **synthetically generated housing dataset** with features such as:
 
-**Evaluation Metrics:**
+* Bedrooms
+* Bathrooms
+* Living Area
+* Lot Area
+* Floors
+* Property Age
+* Garage
+* Location Score
 
-* Mean Absolute Error (MAE)
-* Mean Squared Error (MSE)
-* R² Score
+> The dataset is synthetic and was created for project demonstration and learning purposes.
 
-## 📊 Results
+## 🚀 Streamlit Application
 
-The model performs well in predicting house prices based on the given features. It captures the relationship between property attributes and pricing, providing reasonable estimates for new data.
+The trained model is integrated into a **Streamlit web application**, allowing users to enter property details and receive an estimated house price.
 
 ## 🛠️ Technologies Used
 
@@ -55,16 +50,18 @@ The model performs well in predicting house prices based on the given features. 
 * Matplotlib
 * Seaborn
 * Scikit-learn
+* Streamlit
 * Jupyter Notebook
 
-## 🚀 How to Run
+## ▶️ How to Run
 
-1. Clone the repository.
-2. Install the required libraries.
-3. Open the Jupyter Notebook.
-4. Load the dataset.
-5. Run all cells step by step.
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+The application will open in your browser.
 
 ## 📌 Conclusion
 
-This project demonstrates how **Machine Learning** can be applied to **real estate price prediction**. Model performance can be improved using advanced models such as **Random Forest, XGBoost**, and hyperparameter tuning.
+This project demonstrates the practical application of **Machine Learning for real estate price prediction**, from data preparation and model training to building an interactive prediction application with Streamlit.
